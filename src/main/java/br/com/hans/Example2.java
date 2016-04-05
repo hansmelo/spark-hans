@@ -24,8 +24,8 @@ public class Example2 {
 		List<Tuple2<String, Integer>> list = numberBus.collect();
 
 		for (Tuple2<String, Integer> busNumber : list) {
-			System.out.println("linha: " + busNumber._1());
-			System.out.println("Número de ônibus: " + busNumber._2());
+			System.out.println("line: " + busNumber._1());
+			System.out.println("Number of bus: " + busNumber._2());
 		}
 
 		sparkContext.close();

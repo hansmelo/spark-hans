@@ -19,8 +19,8 @@ public class Example1 {
 				.map(x -> x.split(","))
 				.map(o -> new Bus(o[0], o[1], o[2], o[3], o[4]));
 
-		DataFrame onibusDF = sqlContext.createDataFrame(bus, Bus.class);
+		DataFrame busDataFrame = sqlContext.createDataFrame(bus, Bus.class);
 
-		onibusDF.show();
+		busDataFrame.show();
 	}
 }
